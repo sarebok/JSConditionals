@@ -1,13 +1,23 @@
-.homework-one {
-  border: 1px solid black;
-  padding: 0.3rem;
+.grid-container {
+  display: grid;
+  /*   grid-template-areas:
+    "HW1"
+    "HW2"
+    "HW3"; */
+  grid-template-columns: auto;
 }
 
-.homework-two {
+.homework-one,
+.homework-two,
+.homework-three {
   border: 1px solid black;
   padding: 0.3rem;
+  text-align: center;
 }
 
+#js-img {
+  border: 2px solid transparent;
+}
 .homework-two-area {
   display: flex;
   justify-content: space-around;
@@ -23,4 +33,19 @@
 
 input {
   width: 3rem;
+}
+
+#calcButton {
+  margin-top: 0.5rem;
+}
+
+#result,
+#pass-result {
+  height: 1rem;
+}
+
+@media (min-width: 576px) {
+  .grid-container {
+    grid-template-columns: auto auto;
+  }
 }

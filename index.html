@@ -7,52 +7,97 @@
     <title>Document</title>
   </head>
   <body>
-    <!-- aqui empieza el html del trabajo 1 -->
-    <div class="homework-one">
-      <h1>This is the first homework</h1>
-      <p>click in the image to add border</p>
-      <p>and then another click to take it off</p>
-      <img
-        id="js-img"
-        src="https://th.bing.com/th/id/OIP.wSTCfMrxzjhhb3_b-BPxmAHaFV?w=250&h=180&c=7&r=0&o=5&pid=1.7"
-        alt="random-img"
-      />
-    </div>
-    <!-- aqui empieza el html del trabajo 2 -->
-    <div class="homework-two">
-      <h1>This is the second homework</h1>
-      <p>Calculates the sum of stikers quantity</p>
-      <p>If more than 10, it is too much</p>
-      <div class="homework-two-area">
-        <div class="sticker-container">
-          <img
-            id="first-sticker"
-            src="https://th.bing.com/th/id/OIP.XTE6LuODmuiVEWU1gxPomAAAAA?w=166&h=180&c=7&r=0&o=5&pid=1.7"
-            alt="first"
-          />
-          <input id="first-sticker-quantity" type="number" />
-        </div>
-        <div class="sticker-container">
-          <img
-            id="second-sticker"
-            src="https://th.bing.com/th/id/OIP.FjLsSKxlNy5ehfCgmmsimgAAAA?w=166&h=180&c=7&r=0&o=5&pid=1.7"
-            alt=""
-          />
-          <input id="second-sticker-quantity" type="number" />
-        </div>
-        <div class="sticker-container">
-          <img
-            id="third-sticker"
-            src="https://th.bing.com/th/id/OIP.i4JPVGR62v877ndy8zuP6AAAAA?w=180&h=180&c=7&r=0&o=5&pid=1.7"
-            alt=""
-          />
-          <input id="third-sticker-quantity" type="number" />
-        </div>
+    <div class="grid-container">
+      <!-- aqui empieza el html del trabajo 1 -->
+      <div class="homework-one">
+        <h1>This is the first homework</h1>
+        <p>click in the image to add border</p>
+        <p>and then another click to take it off</p>
+        <img
+          id="js-img"
+          src="https://th.bing.com/th/id/OIP.wSTCfMrxzjhhb3_b-BPxmAHaFV?w=250&h=180&c=7&r=0&o=5&pid=1.7"
+          alt="random-img"
+        />
       </div>
-      <button id="calcButton">calculate</button>
-      <p id="result"></p>
+      <!-- aqui empieza el html del trabajo 2 -->
+      <div class="homework-two">
+        <h1>This is the second homework</h1>
+        <p>Calculates the sum of stikers quantity</p>
+        <p>If more than 10, it is too much</p>
+        <div class="homework-two-area">
+          <div class="sticker-container">
+            <img
+              id="first-sticker"
+              src="https://th.bing.com/th/id/OIP.XTE6LuODmuiVEWU1gxPomAAAAA?w=166&h=180&c=7&r=0&o=5&pid=1.7"
+              alt="first"
+            />
+            <input id="first-sticker-quantity" type="number" />
+          </div>
+          <div class="sticker-container">
+            <img
+              id="second-sticker"
+              src="https://th.bing.com/th/id/OIP.FjLsSKxlNy5ehfCgmmsimgAAAA?w=166&h=180&c=7&r=0&o=5&pid=1.7"
+              alt=""
+            />
+            <input id="second-sticker-quantity" type="number" />
+          </div>
+          <div class="sticker-container">
+            <img
+              id="third-sticker"
+              src="https://th.bing.com/th/id/OIP.i4JPVGR62v877ndy8zuP6AAAAA?w=180&h=180&c=7&r=0&o=5&pid=1.7"
+              alt=""
+            />
+            <input id="third-sticker-quantity" type="number" />
+          </div>
+        </div>
+        <button id="calcButton">calculate</button>
+        <p id="result"></p>
+      </div>
+      <!-- aqui termina el html del trabajo 2 -->
+      <!-- aqui empieza el html del trabajo 3 -->
+      <div class="homework-three">
+        <h1>This is the third homework</h1>
+        <p>Try to get the correct password</p>
+        <p>hint: the first is 911 and the second is 714 xD</p>
+        <select name="numero" id="primer-digito">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+        </select>
+        <select name="numero" id="segundo-digito">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+        </select>
+        <select name="numero" id="tercer-digito">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+        </select>
+        <button id="pass-button">enter</button>
+        <p id="pass-result"></p>
+      </div>
+
+      <!-- aqui termina el html del trabajo 3 -->
     </div>
-    <!-- aqui termina el html del trabajo 2 -->
     <script src="./assets/js/script.js"></script>
   </body>
 </html>

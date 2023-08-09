@@ -33,8 +33,35 @@ btn.addEventListener("click", () => {
   const sum = Number(a) + Number(b) + Number(c);
   console.log(sum);
   if (sum <= 10) {
-    result.innerHTML = "total: " + Number(sum);
+    result.innerHTML = "total: " + sum;
   } else {
     result.innerHTML = "Llevas demasiados golosooo!";
   }
 });
+//aqui termina el js del trabajo 2
+//aqui empieza el js del trabajo 3
+const primerDigito = document.getElementById("primer-digito");
+const segundoDigito = document.getElementById("segundo-digito");
+const tercerDigito = document.getElementById("tercer-digito");
+const passBtn = document.getElementById("pass-button");
+const passResult = document.getElementById("pass-result");
+
+console.log(primerDigito.value);
+console.log(segundoDigito.value);
+console.log(tercerDigito.value);
+console.log(passBtn);
+console.log(passResult);
+
+passBtn.addEventListener("click", () => {
+  const selectedPass =
+    primerDigito.value + segundoDigito.value + tercerDigito.value;
+  console.log(selectedPass);
+  if (selectedPass == "911") {
+    passResult.innerHTML = "password 1 correcto";
+  } else if (selectedPass == "714") {
+    passResult.innerHTML = "password 2 correcto";
+  } else {
+    passResult.innerHTML = "password incorrecto";
+  }
+});
+//aqui termina el js del trabajo 3
