@@ -13,3 +13,28 @@ imgContainer.addEventListener("click", () => {
   }
 });
 //aqui termina el js del trabajo 1
+//aqui empieza el js del trabajo 2
+const firstStickerQuantity = document.getElementById("first-sticker-quantity");
+const secondStickerQuantity = document.getElementById(
+  "second-sticker-quantity"
+);
+const thirdStickerQuantity = document.getElementById("third-sticker-quantity");
+const btn = document.getElementById("calcButton");
+const result = document.getElementById("result");
+console.log(firstStickerQuantity);
+console.log(secondStickerQuantity);
+console.log(thirdStickerQuantity);
+console.log(btn);
+console.log(result);
+btn.addEventListener("click", () => {
+  const a = firstStickerQuantity.value;
+  const b = secondStickerQuantity.value;
+  const c = thirdStickerQuantity.value;
+  const sum = Number(a) + Number(b) + Number(c);
+  console.log(sum);
+  if (sum <= 10) {
+    result.innerHTML = "total: " + Number(sum);
+  } else {
+    result.innerHTML = "Llevas demasiados golosooo!";
+  }
+});
