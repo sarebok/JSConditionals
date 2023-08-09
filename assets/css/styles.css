@@ -1,0 +1,26 @@
+.homework-one {
+  border: 1px solid black;
+  padding: 0.3rem;
+}
+
+.homework-two {
+  border: 1px solid black;
+  padding: 0.3rem;
+}
+
+.homework-two-area {
+  display: flex;
+  justify-content: space-around;
+}
+
+.sticker-container {
+  width: 1rem;
+}
+
+.sticker-container img {
+  width: 3rem;
+}
+
+input {
+  width: 3rem;
+}
