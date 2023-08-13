@@ -1,9 +1,5 @@
 .grid-container {
   display: grid;
-  /*   grid-template-areas:
-    "HW1"
-    "HW2"
-    "HW3"; */
   grid-template-columns: auto;
 }
 
